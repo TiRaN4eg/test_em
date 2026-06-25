@@ -1,13 +1,20 @@
 services:
-  nginx:
+  em_nginx:
     image: nginx
-    container_name: custom_nginx
+    container_name: ${nginx_name}
     ports:
       - "80:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     restart: always
-  backend:
+    networks:
+      - em_test_network
+  em_backend:
     build: ./backend
-    container_name: custom_backend
+    container_name: ${backend_name}
     restart: always
+    networks:
+      - em_test_network
+networks:
+  em_test_network:
+    driver: bridge
