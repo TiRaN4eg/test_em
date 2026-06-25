@@ -1,5 +1,5 @@
 Установка:  
-git clone https://gitverse.ru/maxim1986y/test_em https://gitverse.ru/maxim1986y/test_em  
+git clone https://gitverse.ru/maxim1986y/test_em  
 cd ./test_em  
 Оредактируйте файл .env, указав предпочтительные имена контейнеров  
 docker-compose up -d  
