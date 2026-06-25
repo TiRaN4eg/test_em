@@ -1,5 +1,4 @@
 # test_em
-Test job
 
 Установка:  
 git clone https://gitverse.ru/maxim1986y/test_em  
